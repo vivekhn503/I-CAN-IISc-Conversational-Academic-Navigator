@@ -11,6 +11,7 @@ setup(
         "streamlit",
         "langchain",
         "python-dotenv",
-        "langchain-community"
+        "langchain-community",
+        "faiss-cpu" 
     ],
 )
