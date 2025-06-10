@@ -54,12 +54,23 @@ def initialize_agent_pipeline(
         description="Fetch the top 3 most relevant document chunks for a query."
     )
 
+    #  Date tool 
+    def get_current_date(_query: str) -> str:
+        """Return today's date in YYYY-MM-DD format."""
+        return datetime.now().strftime("%Y-%m-%d")
+
+    date_tool = Tool(
+        name="get_current_date",
+        func=get_current_date,
+        description="Returns the current date in YYYY-MM-DD format."
+    )
+
     # 4. Configure conversational memory to keep chat history
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
     # 5. Initialize the agent with the retrieval tool and memory
     agent = initialize_agent(
-        tools=[retrieval_tool],
+        tools=[retrieval_tool, date_tool],
         llm=llm,
         agent=AgentType.CHAT_CONVERSATIONAL_REACT_DESCRIPTION,
         memory=memory,
