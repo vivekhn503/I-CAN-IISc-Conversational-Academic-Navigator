@@ -9,6 +9,8 @@ setup(
     install_requires=[
         # copy  runtime deps from requirements.txt, e.g.:
         "streamlit",
-        "langchain"
+        "langchain",
+        "python-dotenv",
+        "langchain-community"
     ],
 )
