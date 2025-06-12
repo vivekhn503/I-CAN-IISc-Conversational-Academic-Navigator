@@ -12,6 +12,8 @@ setup(
         "langchain",
         "python-dotenv",
         "langchain-community",
-        "faiss-cpu" 
+        "faiss-cpu" ,
+        "PyMuPDF",
+        "beautifulsoup4"        
     ],
 )
