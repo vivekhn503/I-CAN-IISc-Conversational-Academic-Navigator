@@ -1,56 +1,84 @@
-# retrieval/agent_pipeline.py
-
-"""
-retrieval/agent_pipeline.py
-
-Defines a LangChain conversational Agent that uses FAISS-based document retrieval as a tool
-and ChatOllama/ChatOpenAI as the underlying language model, with conversational memory support.
-
-Functions:
-- initialize_agent_pipeline: builds and returns the Agent and its vector store.
-"""
-
 from datetime import datetime
 import logging
 import os
 from typing import List, Tuple
 
-from langchain.chat_models import ChatOllama
-from langchain.embeddings import OllamaEmbeddings
+from langchain.chat_models import ChatOpenAI
+from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.agents import Tool, initialize_agent, AgentType
 from langchain.memory import ConversationBufferMemory
 from langchain.docstore.document import Document
 
-# from langchain.chat_models import ChatOllama
-# from langchain.embeddings import OllamaEmbeddings
+from config.settings import FAISS_INDEX_PATH, MODEL_NAME, TEMPERATURE
 
 
-from langchain.chat_models import ChatOpenAI
-from langchain.embeddings import OpenAIEmbeddings
+# --- Weekly Digest Tool ---
+def create_weekly_digest_tool(vector_store) -> Tool:
+    def generate_digest(_query: str) -> str:
+        logging.info("🧠 [Digest Tool] Generating weekly digest.")
+        hits = vector_store.similarity_search("weekly update OR announcement OR deadline", k=10)
+        combined = "\n\n".join([doc.page_content for doc in hits])
+        prompt = f"""
+Summarize the following recent academic updates into weekly digest format.
+Group into: 📅 Deadlines, 📣 Announcements, 📝 Course-specific Updates.
+Only include updates from the past 7 days.
+
+TEXT:
+{combined}
+"""
+        llm = ChatOpenAI(model_name=MODEL_NAME, temperature=0.3)
+        return "📬 (via `weekly_digest_agent`) Weekly Digest:\n\n" + llm.predict(prompt)
+
+    return Tool(
+        name="weekly_digest_agent",
+        func=generate_digest,
+        description="Summarize weekly academic updates like deadlines and announcements."
+    )
 
 
-# Import configuration constants
-from config.settings import FAISS_INDEX_PATH, MODEL_NAME, TEMPERATURE 
+# --- Personal Planner Tool ---
+def create_personal_planner_tool(vector_store) -> Tool:
+    def generate_plan(query: str) -> str:
+        logging.info("🧠 [Planner Tool] Creating personalized academic plan.")
+        hits = vector_store.similarity_search(query, k=6)
+        content = "\n\n".join([doc.page_content for doc in hits])
+        prompt = f"""
+You are an academic planner. Based on the user's query and the provided text, identify any upcoming deadlines, especially related to specific courses like Machine Learning.
+
+Only include deadlines from the current or next week (today: {datetime.now().strftime('%Y-%m-%d')}).
+
+Respond clearly and only if a deadline is found.
+
+---
+
+User Query:
+{query}
+
+Retrieved Text:
+{content}
+"""
+
+        llm = ChatOpenAI(model_name=MODEL_NAME, temperature=0.4)
+        return "📘 (via `personal_planner_agent`)\n\n" + llm.predict(prompt)
+
+    return Tool(
+        name="personal_planner_agent",
+        func=generate_plan,
+        description="Help students plan based on their course-specific deadlines, announcements, or progress queries."
+    )
 
 
+# --- Load Persistent Agent ---
 def load_agent_pipeline() -> Tuple[object, FAISS]:
-    """
-    Load a persisted FAISS vector store and reconstruct the conversational Agent.
-
-    Returns:
-        agent: A LangChain Agent that uses the loaded FAISS index.
-        vector_store: The FAISS store containing document embeddings.
-    """
-    # 1. Load embeddings and FAISS vector store
     embeddings = OpenAIEmbeddings()
     vector_store = FAISS.load_local(
         FAISS_INDEX_PATH,
         embeddings,
-        allow_dangerous_deserialization=True  # required due to pickle safety
+        allow_dangerous_deserialization=True
     )
 
-    # 2. Define retrieval tool
+    # Define tools
     def retrieve_docs(query: str) -> str:
         hits = vector_store.similarity_search_with_score(query, k=3)
         return "\n\n".join([doc.page_content for doc, _ in hits])
@@ -61,24 +89,20 @@ def load_agent_pipeline() -> Tuple[object, FAISS]:
         description="Fetch top 3 relevant document chunks for a query."
     )
 
-    # 3. Add a date tool (optional)
-    def get_current_date(_query: str) -> str:
-        return datetime.now().strftime("%Y-%m-%d")
-
     date_tool = Tool(
         name="get_current_date",
-        func=get_current_date,
+        func=lambda _: datetime.now().strftime("%Y-%m-%d"),
         description="Returns the current date in YYYY-MM-DD format."
     )
 
-    # 4. Set up conversation memory
-    memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
+    weekly_digest_tool = create_weekly_digest_tool(vector_store)
+    personal_planner_tool = create_personal_planner_tool(vector_store)
 
-    # 5. Create agent
+    memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
     llm = ChatOpenAI(model_name=MODEL_NAME, temperature=TEMPERATURE)
 
     agent = initialize_agent(
-        tools=[retrieval_tool, date_tool],
+        tools=[retrieval_tool, date_tool, weekly_digest_tool, personal_planner_tool],
         llm=llm,
         agent=AgentType.CHAT_CONVERSATIONAL_REACT_DESCRIPTION,
         memory=memory,
@@ -88,37 +112,15 @@ def load_agent_pipeline() -> Tuple[object, FAISS]:
 
     return agent, vector_store
 
-def initialize_agent_pipeline(
-    documents: List[Document]
-) -> Tuple[object, FAISS]:  # Agent is returned as a generic object
-    """
-    Instantiate a conversational Agent with FAISS retrieval and chat memory.
 
-    Args:
-        documents (List[Document]): List of text chunks to index in FAISS.
-
-    Returns:
-        agent: A LangChain Agent that will decide when to call retrieval.
-        vector_store (FAISS): The FAISS store containing document embeddings.
-    """
-    # 1. Set up the language model and embeddings
-    #llm = ChatOllama(model=MODEL_NAME, temperature=TEMPERATURE)
-    #embeddings = OllamaEmbeddings(model=MODEL_NAME)
-
-
+# --- Initialize Agent with New Documents ---
+def initialize_agent_pipeline(documents: List[Document]) -> Tuple[object, FAISS]:
     llm = ChatOpenAI(model_name=MODEL_NAME, temperature=TEMPERATURE)
     embeddings = OpenAIEmbeddings()
 
-
-    # 2. Build FAISS index from supplied documents
     if os.path.exists(FAISS_INDEX_PATH):
         logging.info("📁 Loading existing FAISS index from disk.")
-        vector_store = FAISS.load_local(
-        FAISS_INDEX_PATH,
-        embeddings,
-        allow_dangerous_deserialization=True
-        )
-
+        vector_store = FAISS.load_local(FAISS_INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
         vector_store.add_documents(documents)
         logging.info(f"➕ Added {len(documents)} new documents to existing index.")
     else:
@@ -129,8 +131,7 @@ def initialize_agent_pipeline(
     vector_store.save_local(FAISS_INDEX_PATH)
     logging.info(f"💾 Saved FAISS index to: {FAISS_INDEX_PATH}")
 
-
-    # 3. Define a retrieval tool that returns concatenated top-3 documents
+    # Tools
     def retrieve_docs(query: str) -> str:
         hits = vector_store.similarity_search_with_score(query, k=3)
         return "\n\n".join([doc.page_content for doc, _ in hits])
@@ -138,33 +139,27 @@ def initialize_agent_pipeline(
     retrieval_tool = Tool(
         name="faiss_retriever",
         func=retrieve_docs,
-        description="Fetch the top 3 most relevant document chunks for a query."
+        description="Fetch top 3 relevant document chunks for a query."
     )
-
-    #  Date tool 
-    def get_current_date(_query: str) -> str:
-        """Return today's date in YYYY-MM-DD format."""
-        return datetime.now().strftime("%Y-%m-%d")
 
     date_tool = Tool(
         name="get_current_date",
-        func=get_current_date,
-        description="Returns the current date in YYYY-MM-DD format."
+        func=lambda _: datetime.now().strftime("%Y-%m-%d"),
+        description="Returns the current date."
     )
 
-    # 4. Configure conversational memory to keep chat history
+    weekly_digest_tool = create_weekly_digest_tool(vector_store)
+    personal_planner_tool = create_personal_planner_tool(vector_store)
+
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
-    # 5. Initialize the agent with the retrieval tool and memory
     agent = initialize_agent(
-        tools=[retrieval_tool, date_tool],
+        tools=[retrieval_tool, date_tool, weekly_digest_tool, personal_planner_tool],
         llm=llm,
         agent=AgentType.CHAT_CONVERSATIONAL_REACT_DESCRIPTION,
         memory=memory,
         verbose=True,
         handle_parsing_errors=True
-
     )
-    
 
     return agent, vector_store
