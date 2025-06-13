@@ -14,6 +14,7 @@ setup(
         "langchain-community",
         "faiss-cpu" ,
         "PyMuPDF",
-        "beautifulsoup4"        
+        "beautifulsoup4",
+        "bert-score"
     ],
 )
