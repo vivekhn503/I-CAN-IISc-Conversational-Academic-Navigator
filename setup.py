@@ -15,6 +15,9 @@ setup(
         "faiss-cpu" ,
         "PyMuPDF",
         "beautifulsoup4",
-        "bert-score"
+        "bert-score",
+        "google-api-python-client",
+        "google-auth-httplib2", 
+        "google-auth-oauthlib"
     ],
 )

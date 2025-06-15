@@ -9,6 +9,8 @@ from langchain.vectorstores import FAISS
 from langchain.agents import Tool, initialize_agent, AgentType
 from langchain.memory import ConversationBufferMemory
 from langchain.docstore.document import Document
+from tools.gmail_tool import send_email
+from tools.calender_invite import schedule_event
 
 from config.settings import FAISS_INDEX_PATH, MODEL_NAME, TEMPERATURE
 
@@ -68,6 +70,37 @@ Retrieved Text:
         description="Help students plan based on their course-specific deadlines, announcements, or progress queries."
     )
 
+
+# --- Gmail Agent ---
+def create_gmail_tool() -> Tool:
+    def gmail_func(input: str) -> str:
+        # Simple format: "to::subject::body"
+        try:
+            to, subject, body = input.split("::", 2)
+            return send_email(to.strip(), subject.strip(), body.strip())
+        except Exception as e:
+            return f"Format: to::subject::body | Error: {e}"
+    return Tool(
+        name="send_gmail_agent",
+        func=gmail_func,
+        description="Send an email via Gmail. Format: to::subject::body"
+    )
+
+# --- Calendar Agent ---
+
+def create_calendar_tool() -> Tool:
+    def calendar_func(input: str) -> str:
+        # Simple format: "summary::start_time::end_time::description"
+        try:
+            summary, start_time, end_time, description = input.split("::", 3)
+            return schedule_event(summary.strip(), start_time.strip(), end_time.strip(), description.strip())
+        except Exception as e:
+            return f"Format: summary::start::end::description | Error: {e}"
+    return Tool(
+        name="schedule_calendar_event",
+        func=calendar_func,
+        description="Schedule a Google Calendar event. Format: summary::start_time::end_time::description"
+    )
 
 # --- Load Persistent Agent ---
 def load_agent_pipeline() -> Tuple[object, FAISS]:
@@ -148,13 +181,16 @@ def initialize_agent_pipeline(documents: List[Document]) -> Tuple[object, FAISS]
         description="Returns the current date."
     )
 
+    gmail_tool = create_gmail_tool()
+    calendar_tool = create_calendar_tool()
+
     weekly_digest_tool = create_weekly_digest_tool(vector_store)
     personal_planner_tool = create_personal_planner_tool(vector_store)
 
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
     agent = initialize_agent(
-        tools=[retrieval_tool, date_tool, weekly_digest_tool, personal_planner_tool],
+        tools=[retrieval_tool, date_tool, weekly_digest_tool, personal_planner_tool, gmail_tool, calendar_tool],
         llm=llm,
         agent=AgentType.CHAT_CONVERSATIONAL_REACT_DESCRIPTION,
         memory=memory,
