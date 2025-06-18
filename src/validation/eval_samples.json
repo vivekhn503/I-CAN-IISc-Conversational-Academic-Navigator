@@ -1,0 +1,12 @@
+[
+  {
+    "question": "What is the Machine Learning deadline?",
+    "answer": "The deadline is June 15, 2025.",
+    "ground_truth": "The Machine Learning course deadline is 15 June 2025."
+  },
+  {
+    "question": "When is the final project due?",
+    "answer": "It's due next Friday.",
+    "ground_truth": "The final project deadline is 21 June 2025."
+  }
+]
