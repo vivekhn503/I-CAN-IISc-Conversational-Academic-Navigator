@@ -18,7 +18,7 @@ setup(
         "bert-score",
         "google-api-python-client",
         "google-auth-httplib2", 
-        "google-auth-oauthlib"
+        "google-auth-oauthlib",
         "openai",
         "tiktoken"
     ],
