@@ -16,6 +16,9 @@ src/prompting/prompt_templates.py
 src/retrieval/__init__.py
 src/retrieval/agent_pipeline.py
 src/retrieval/rag_pipeline.py
+src/tools/__init__.py
+src/tools/calender_invite.py
+src/tools/gmail_tool.py
 src/ui/__init__.py
 src/ui/app.py
 src/ui/app_agent.py
