@@ -8,6 +8,10 @@ Requires-Dist: langchain-community
 Requires-Dist: faiss-cpu
 Requires-Dist: PyMuPDF
 Requires-Dist: beautifulsoup4
+Requires-Dist: bert-score
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
 Requires-Dist: openai
 Requires-Dist: tiktoken
 Dynamic: requires-dist
