@@ -1,0 +1,510 @@
+{
+  "summary": {
+    "hit@k": 1.0,
+    "mrr@k": 0.948,
+    "k": 5,
+    "threshold": 0.75
+  },
+  "samples": [
+    {
+      "question": "I am on maternity leave. How can it impact my academics?",
+      "ground_truth": "Women can avail a maternity leave as per Institute policy in case of maternity during the programme, in addition to the above. A registration fee needs to be paid for the break semesters to keep the registration alive. They can complete the couse in 5 years if maternity leave is availed",
+      "retrieved_docs": [
+        "Candidates can have at most two semesters break in studies. The request must come through the sponsoring organisation. Women can avail a maternity leave of up to a year in case of maternity during the programme, in addition to the above. A registration fee needs to be paid for the break semesters",
+        "examination in case of availing maternity leave. \nIf a student avails maternity leaves before completion of the comprehensive \nexamination, she will be provided additional time equal to the duration of the approved \nmaternity leave. \n1.3.7",
+        "5.11.9 \nCandidates may have a break in studies of a maximum of two semesters. The request \nfor such a break in studies must come through the sponsoring organization. In addition, \nwomen can avail of maternity leave as applicable (the total of all maternity leaves",
+        "maternity leave. In case maternity leave is availed, the woman student will be \npermitted an additional year to submit her thesis/complete the programme (before \nthe registration is cancelled). However, the fellowship will not be paid for the \nextended duration of the programme.",
+        "sponsoring organisation. Women can avail a maternity leave as per Institute policy in case of maternity \nduring the programme, in addition to the above. A registration fee needs to be paid for the break semesters \nto keep the registration alive."
+      ],
+      "similarities": [
+        0.9455,
+        0.8725,
+        0.8924,
+        0.903,
+        0.949
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "Help me find a project mentor. I am interested in subjects related to AI",
+      "ground_truth": "Professors working in AI-related areas include those focused on Machine Learning, Deep Learning, Natural Language Processing, and related subfields. Some examples are Ambedkar Dukkipati (NLP), Vinay Namboodiri (Explainable AI), and Chiranjib Bhattacharyya (Machine Learning).",
+      "retrieved_docs": [
+        "of Artificial Intelligence to early-career professionals with 2-8 years of experience to upskill them to become technology and business leaders in information-driven enterprises. These learnings are coupled with a unique capstone project that applies the learnings to a hands-on project relevant to",
+        "the learnings to a hands-on project relevant to the industry. Faculty from the Division of EECS, the Department of CDS, and the RBCCPS will offer contemporary courses in AI through online lectures and tutorials and will provide mentorship on capstone projects.",
+        "ARTIFICIAL INTELLIGENCE \n(AI)",
+        "Email: rajeshs@IISc.ac.in\nTopics of Expertise: Applications of AI and ML in communication networking; Short-term fairness in WiFi systems; Data analytics for data-driven decision frameworks; Market mechanisms for resource provisioning in software-defined networks.",
+        "AI | Centre For Continuing Education, IISc\nArtificial Intelligence"
+      ],
+      "similarities": [
+        0.8399,
+        0.8415,
+        0.8342,
+        0.8378,
+        0.8509
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "Who is the instructor for the course 'Applied Reinforcement Learning'?",
+      "ground_truth": "Sreekanth Annapureddy",
+      "retrieved_docs": [
+        "E1 277o Reinforcement Learning (3:1) \nCourse Instructor \nProf. Shalabh Bhatnagar, CSA \n \nCourse Description \nReinforcement learning refers to a class of techniques that combine aspects of optimal control, simulation/data driven \noptimization, and approximation methods for problems of dynamic decision making under uncertainty when the model \nof the underlying system and its processes is unknown. A large portion of the algorithms and techniques used here are \nmodel-free in nature and as a result need no knowledge of the system dynamics and protocols used. Reinforcement \nLearning thus finds applications in several diverse areas such as Adaptive Control, Signal Processing, Manufacturing, \nCommunication and Wireless Networks, Autonomous Systems and Data Mining. \nThe objective of this course will be to provide both a rigorous foundation in Reinforcement Learning through the various \ntools, techniques and algorithms used as well as to cover the state-of-the-art algorithms in Deep Reinforcement Learning \ninvolving simulation-based neural network methods. \nSyllabus \nIntroduction to Reinforcement Learning, Multi-armed bandits, Markov decision processes, Dynamic Programming - \nValue and Policy Iteration Methods, Model-Free Learning Approaches, Monte-Carlo Methods, Temporal Difference \nLearning, Q-learning, SARSA, Double Q-learning, Value Function Approximation Methods - TD Learning with Linear \nFunction Approximation, Neural Network Architectures, Deep Q-Network Algorithm, Policy Gradient Methods, Actor-\nCritic Algorithms \nTextbooks / References \n1. Reinforcement Learning by R. Sutton and A. Barto, MIT Press, 2nd Ed., 2018 \n2. Reinforcement Learning and Optimal Control by D. Bertsekas, Athena Scientific, 2019 \n3. Selected Recent Papers \nPrerequisites: None \nGrading \n\u2022 \nHomework: 20% \n\u2022 \nMid-Term Exam: 25% \n\u2022 \nCourse Project: 25% \n\u2022 \nFinal-Term Exam: 30%",
+        "E1 316o Deep Learning for Robotics (2:1) \nCourse Instructors \nDr. Shishir N. Y. Kolathaya, Dr. Pushpak Jagtap, Dr. Ravi Prakash, RBCCPS \n \nCourse Description \nThis graduate course will explore the new area of interaction between learning and control specifically applied to robotic \nsystems, both from a foundational level together with a view toward application. The course will first build the necessary \nframework in which to understand basics of robotic systems, including robot kinematics and dynamics, sensing and \nestimation, control, machine learning, reinforcement learning and imitation learning. With these fundamentals the \ncourse will focus on data driven approaches for learning and control applied to robotic systems. \nSyllabus \nRobot dynamics and kinematics, nonlinear control and stability, Markov decision processes, reinforcement learning, \nimitation learning, model free methods, exploration vs. exploitation \nNote: Active student participation will be expected in course projects, presentations, and delivering lectures in some of \nthe selected topics. \nTextbooks / References \n1. A Mathematical Introduction to Robotic Manipulation by Richard M. Murray, Zexiang Li, S. Shankar Sastry, \nCRC Press, 1994 \n2. Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto, MIT Press, 2017 \n3. Deep Reinforcement Learning by Sergey Levine: http://rail.eecs.berkeley.edu/deeprlcourse/ \n4. Robot Modeling and Control by Mark W. Spong, Seth Hutchinson, M. Vidyasagar, Wiley, 2005 \nPrerequisites: Students must be well versed with basic mathematical concepts like linear algebra, classical analysis, \nand probability theory. \nGrading \n\u2022 \nHomeworks/Quiz: 60% \n\u2022 \nProject Reports: 10% \n\u2022 \nProject Presentations: 30%",
+        "Sl No: 13\nName: Shalabh Bhatnagar\nDepartment: CSA\nWebsite Link: https://www.csa.iisc.ac.in/~shalabh/\nEmail: shalabh@IISc.ac.in\nTopics of Expertise: Projects involving applications of RL/optimization techniques/ML.",
+        "Sl No: 14\nName: Shishir Nadubettu Yadukumar Kolathaya\nDepartment: RBCCPS\nWebsite Link: https://www.shishirny.com/\nEmail: shishirk@IISc.ac.in\nTopics of Expertise: Deep learning for robotics, Practical reinforcement learning",
+        "Email: vkatewa@IISc.ac.in\nTopics of Expertise: 5G applications for Robotics and Autonomous Systems Reinforcement Learning based Inference and Control Security and Privacy in Cyber-Physical Systems Design of Communication Protocols for Networked Control Systems"
+      ],
+      "similarities": [
+        0.736,
+        0.7509,
+        0.786,
+        0.8123,
+        0.7928
+      ],
+      "hit": true,
+      "mrr": 0.5
+    },
+    {
+      "question": "What is the number of credits for the course 'Time Series Analysis'?",
+      "ground_truth": "2",
+      "retrieved_docs": [
+        "DA 226o Financial Analytics (3:1) \nCourse Instructor \nProf. Shashi Jain, Management Studies \n \nCourse Description \nThis four-credit course will be offered as an elective every Aug-Dec term. The course will introduce a number of \nfinancial analytics techniques. The course covers the fundamentals of financial time-series, performance models, and \nforecasting models. The participants will also learn how to evaluate the risk-reward trade-off with an introduction to the \nModern Portfolio Theory. \nSyllabus \nModule 1: Introduction to financial analytics, business forecasting, and time-series data \nModule 2: Basic forecasting models, moving averages, exponential smoothing, and Holt-Winter\u2019s forecasting model \nModule 3: How to identify if a time series is stationary or not and know how to make non-stationary data become \nstationary, introduction to ARIMA and its implementation \nModule 4: Modern portfolio theory and advanced topics on algorithmic trading \n \nTextbooks / References \n1. Analysis of Financial Time Series by Ruey Tsay (Wiley Series in Probability and Statistics)  \n2. Time Series Analysis and its Applications by Shumway and Stoffer \n3. Advances in Financial Machine Learning by Marcos Lopez de Prado \nPrerequisites: Basics of programming, probability, and statistics \nGrading \n\u2022 \nAssignments: 30% \n\u2022 \nModule Quizzes 30% \n\u2022 \nEnd-Term Exam: 40%",
+        "Program Structure [For 2025 batch onwards]\nCore courses (16 credits):\nThese are typically taken in the first and second semesters.\nRandom Processes (3:1)\nLinear Algebra(3:1)\nLinear and Non-linear Optimization (3:1)\nMachine Learning (3:1)\nSample Elective courses (at least 20 credits):\nData Analytics",
+        "Program Structure [For 2023 and 2024 batch]\nCore courses (16 credits):\nThese are typically taken in the first and second semesters.\nRandom Processes (3:1)\nLinear Algebra(3:1)\nLinear and Non-linear Optimization (3:1)\nMachine Learning (3:1)\nSample Elective courses (at least 21 credits):",
+        "20 credits\nProject:\n28 Credits\nMore Details\nData Science and Business Analytics\nCore Courses:\n12 Credits\nElective Courses:\n20 credits\nProject:\n32 Credits\nMore Details\nElectronics and Communication Engineering\nCore Courses:\n16 Credits\nElective Courses:\n20 credits\nProject:\n28 Credits\nMore Details",
+        "Core courses (12 credits):\nThese are typically taken in the first and second semesters. The courses will have a new course code since the credits re different from the regular M.Tech. on account of some revision in syllabus and homework/assignments/online labs.\nRandom Processes (3:1)"
+      ],
+      "similarities": [
+        0.7343,
+        0.7441,
+        0.746,
+        0.7326,
+        0.7534
+      ],
+      "hit": true,
+      "mrr": 0.2
+    },
+    {
+      "question": "Which courses are offered in the AI stream during Summer 2025?",
+      "ground_truth": "Applied Reinforcement Learning; Graph Neural Networks; Generative AI; Time Series Analysis; AI for Robotics",
+      "retrieved_docs": [
+        "The following streams are open for admission in the academic year 2025-26: \n\u2022 \nArtificial Intelligence \n\u2022 \nData Science and Business Analytics \n\u2022 \nElectronics and Communication Engineering \nThe programme may expand to other streams in the next few years.",
+        "Department of Computational Data Sciences (CDS), and the Robert Bosch Centre for Cyber-Physical \nSystems (RBCCPS) will offer contemporary courses in AI through online lectures and tutorials, and will \nprovide high-level mentorship on capstone projects. More details at AI Stream website.",
+        "Program Structure [2023 Batch]\nCore courses (12 credits):\nThese are typically taken in the first and second semesters.\nData Science in Practice (3:1)\nApplied AI: Building Practical and Scalable ML Systems (3:1)\nData Engineering at Scale (3:1)\nSample Elective courses (at least 20 credits):",
+        "Official offer of admission by IISc:\n7\u00a0Jun, 2025\nPayment of fees and deposit by selected candidates:\n14 Jun, 2025\nStart of classes:\n1 Aug, 2025\nEligibility Criteria\nArtificial Intelligence\nMinimum Degree:\nBE/BTech/BS(4yrs), in CS/ECE/EE or an equivalent discipline\nPercentage:",
+        "Program Structure [For 2021 and 2022 batch]\nCore courses (12 credits):\nThese are typically taken in the first and second semesters.\nIntroduction to Data Science\nIntroduction to Computing for AI & Machine Learning\nData Engineering at Scale\nSample Elective courses (at least 20 credits):"
+      ],
+      "similarities": [
+        0.7941,
+        0.8183,
+        0.7981,
+        0.7752,
+        0.7841
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "What topics of expertise does Prof. Ambedkar Dukkipati have?",
+      "ground_truth": "Natural language processing with knowledge graphs",
+      "retrieved_docs": [
+        "Sl No: 1\nName: Ambedkar Dukkipati\nDepartment: CSA\nWebsite Link: https://www.csa.iisc.ac.in/~ambedkar/\nEmail: ambedkar@IISc.ac.in\nTopics of Expertise: (1) Natural language processing with knowledge graphs, (2) Learning to navigate with reinforcement learning, (3) Machine learning in low data regime",
+        "Faculty Mentor : Ambedkar Dukkipati\nMail ID: ambedkar@iisc.ac.in\nNo. of Students assigned to faculty mentors: 4",
+        "\uf0a7 To make review of students\u2019 code of ethics and conduct and make recommendations. \n \n\uf0a7 \nProf. M S Bobji (Chair & Advisor) \n\uf0a7 \nProf. Ambedkar Dukkipati (Member) \n\uf0a7 \nProf. Annapoorni Rangarajan \n(Member) \n\uf0a7 \nProf. Abha Misra (Member) \n\uf0a7 \nProf. Partha Pratim Mondal (Member) \n\uf0a7",
+        "Email: simmhan@iisc.ac.in\nTopics of Expertise: Abstractions, algorithms and applications for distributed data and computing systems. Cloud computing, AI on the Edge, Big Data platforms, Internet of Things (IoT), Temporal graph processing, UAVs",
+        "Sl No: 40\nName: Venkatesh Babu R\nDepartment: CDS\nWebsite Link: http://cds.iisc.ac.in/faculty/venky/\nEmail: venky@iisc.ac.in\nTopics of Expertise:  Video Analytics, Multimedia, Image/Video Processing, Compression, Compressed Domain Processing, Computer Vision and Machine Learning"
+      ],
+      "similarities": [
+        0.8017,
+        0.7177,
+        0.7053,
+        0.7976,
+        0.7643
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "How many students are assigned to Prof. Ambedkar Dukkipati?",
+      "ground_truth": "3",
+      "retrieved_docs": [
+        "Faculty Mentor : Ambedkar Dukkipati\nMail ID: ambedkar@iisc.ac.in\nNo. of Students assigned to faculty mentors: 4",
+        "Sl No: 1\nName: Ambedkar Dukkipati\nDepartment: CSA\nWebsite Link: https://www.csa.iisc.ac.in/~ambedkar/\nEmail: ambedkar@IISc.ac.in\nTopics of Expertise: (1) Natural language processing with knowledge graphs, (2) Learning to navigate with reinforcement learning, (3) Machine learning in low data regime",
+        "Faculty Mentor : Ratikanta Behera\nMail ID: ratikanta@iisc.ac.in\nNo. of Students assigned to faculty mentors: 6",
+        "Faculty Mentor : Pushpak Jagtap\nMail ID: pushpak@iisc.ac.in\nNo. of Students assigned to faculty mentors: 2",
+        "Faculty Mentor : Govind & Uday\nMail ID: govind@iisc.ac.in, udayb@iisc.ac.in\nNo. of Students assigned to faculty mentors: 1"
+      ],
+      "similarities": [
+        0.7507,
+        0.7441,
+        0.7547,
+        0.7532,
+        0.7599
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "What is the deadline to drop a course in the Summer 2025 term?",
+      "ground_truth": "The deadline to drop a course is June 5, 2025.",
+      "retrieved_docs": [
+        "Se no: 5\nAcademic Activities: Course dropping (Without mention)\nTime Period: 11.05.2025 to 30.05.2025",
+        "Se no: 7\nAcademic Activities: Course dropping (With mention)\nTime Period: 04.06.2025 to 13.06.2025",
+        "Se no: 2\nAcademic Activities: Course Registration\nTime Period: 01.05.2025 to 07.05.2025",
+        "Se no: 9\nAcademic Activities: Course & instructor feedback submission\nTime Period: 18.06.2025 to 25.06.2025",
+        "a written examination, (prior to the last date for dropping the Course without mention). \nSuch an option is not available for Courses offered in the summer term. \n5.1.10  Until the result is declared, the student should continue to attend classes for the course."
+      ],
+      "similarities": [
+        0.8796,
+        0.8746,
+        0.8427,
+        0.8387,
+        0.8381
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "When is the summer break or semester end vacation scheduled?",
+      "ground_truth": "The semester ends on August 2, 2025, followed by a short break.",
+      "retrieved_docs": [
+        "Research students: \n(a) \nThe students should submit a written request with the reason and the duration of \nbreak in studies requested. \nPage 61 of 115",
+        "Candidates can have at most two semesters break in studies. The request must come through the sponsoring organisation. Women can avail a maternity leave of up to a year in case of maternity during the programme, in addition to the above. A registration fee needs to be paid for the break semesters",
+        "(c)\nThe progress status and detailed information on course completion and project\nwork.\n10.3.4 The student must pay tuition and all other fees during the break period. \n10.3.5 For Break in studies on medical grounds, scholarship will be paid for a maximum period",
+        "Se no: 11\nAcademic Activities: End term examination\nTime Period: 27.06.2025",
+        "summer term. \n13. The normal duration is 2-3 years. In special circumstances, a student may be permitted an extension, due \nto break in studies with approval of company coordinator or due to maternity leave, but must complete all"
+      ],
+      "similarities": [
+        0.8099,
+        0.8213,
+        0.8184,
+        0.8506,
+        0.8292
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "How to choose a faculty mentor for summer term projects?",
+      "ground_truth": "You can select a mentor based on your area of interest. Contact details and project domains are provided in the Faculty Mentor List.",
+      "retrieved_docs": [
+        "The PCC will identify a faculty mentor (or committee) during the course programme. Once the project starts, the project mentor (or committee), if different, will take over the role of faculty mentor.",
+        "faculty mentor will approve the project goals and timelines. The faculty mentor will offer high-level \nfeedback on the project and its progress, and coordinate the evaluations, while the in-house company",
+        "Student will propose the topic in consultation with their Guide from within the organization, and an IISc faculty mentor will approve project goals. The faculty mentor will offer high-level feedback on the project and its progress, and coordinate the evaluations, while the in-house company Guide",
+        "Student will propose the topic in consultation with their Guide from within the organization, and an IISc faculty mentor will approve project goals. The faculty mentor will offer high-level feedback on the project and its progress, and coordinate the evaluations, while the in-house company Guide",
+        "Student will propose the topic in consultation with their Guide from within the organization, and an IISc faculty mentor will approve project goals. The faculty mentor will offer high-level feedback on the project and its progress, and coordinate the evaluations, while the in-house company Guide"
+      ],
+      "similarities": [
+        0.8698,
+        0.8251,
+        0.8337,
+        0.8337,
+        0.8337
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "Which professors are working in the AI domain and how can I contact them?",
+      "ground_truth": "The following professors are involved in AI-related projects:\n\n1. **Prof. Ambedkar Dukkipati** (CSA)\n   - Email: ambedkar@iisc.ac.in\n   - Website: https://www.csa.iisc.ac.in/~ambedkar/\n\n2. **Prof. Chiranjib Bhattacharyya** (CSA)\n   - Email: chiru@iisc.ac.in\n   - Website: https://cds.iisc.ac.in/faculty/chiranjib/\n\n3. **Prof. R Venkatesh Babu** (EECS)\n   - Email: venky@iisc.ac.in\n   - Website: https://vision.cps.iisc.ac.in/\n\nAll of them are mentoring projects in AI subdomains like deep learning, computer vision, and NLP.",
+      "retrieved_docs": [
+        "AI | Centre For Continuing Education, IISc\nArtificial Intelligence",
+        "Email: rajeshs@IISc.ac.in\nTopics of Expertise: Applications of AI and ML in communication networking; Short-term fairness in WiFi systems; Data analytics for data-driven decision frameworks; Market mechanisms for resource provisioning in software-defined networks.",
+        "Email: simmhan@iisc.ac.in\nTopics of Expertise: Abstractions, algorithms and applications for distributed data and computing systems. Cloud computing, AI on the Edge, Big Data platforms, Internet of Things (IoT), Temporal graph processing, UAVs",
+        "the learnings to a hands-on project relevant to the industry. Faculty from the Division of EECS, the Department of CDS, and the RBCCPS will offer contemporary courses in AI through online lectures and tutorials and will provide mentorship on capstone projects.",
+        "Department of Computational Data Sciences (CDS), and the Robert Bosch Centre for Cyber-Physical \nSystems (RBCCPS) will offer contemporary courses in AI through online lectures and tutorials, and will \nprovide high-level mentorship on capstone projects. More details at AI Stream website."
+      ],
+      "similarities": [
+        0.8547,
+        0.8349,
+        0.8346,
+        0.8523,
+        0.8457
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "What is the minimum CGPA required to remain enrolled in the M.Tech (Online) program?",
+      "ground_truth": "Students must maintain a minimum CGPA of 5.0 to continue in the program.",
+      "retrieved_docs": [
+        "July 2016 ( 8 Point Scale) \nStudents joining after July 2016 \n(10 Point Scale) \nM. Tech/ MDes/ \nMMgt/ MSc/ \nM. Tech (Online)/ \nM. Tech \n(Sponsored) \n(64 credits) \nFirst Term: A minimum \nTGPA of 3.5 \nSubsequent \nTerms: \nA \nminimum CGPA of 4.0 \nFirst Term: A minimum TGPA \nof 4.0 \nSubsequent \nTerms:",
+        "to PhD (Min. 64 credits at the end of 2nd\nyear) (Basket Rule is not applicable) \nTo be eligible for a MS degree, a \nminimum CGPA of 5.0 \nME / M. Tech/ \nMSc, MDes, \nMMgt./M.Tech \n(online) \nFirst Term a minimum TGPA of 3.5 \nSubsequent terms a minimum \nCGPA of 4.0",
+        "Programme \nAll students who joined \nprior to July 2016 (8 \nPoint Scale) \nStudents joining after July 2016 (10 \nPoint Scale) \nM. Tech (Res) \n[MSc (Engg) \nprior to 2016] \n(12 credits) \nMinimum 12 credits \nwith minimum CGPA of \n5.5 \nMinimum 12 credits with \nminimum CGPA of 7 (with basket \nrule)",
+        "CGPA of 7. \nMinimum 24 credits with a minimum \nCGPA of 7 for dual degree [M. Tech \n(Research) and PhD] (see notes \nbelow) \nb. With Undergraduate degree (Direct \nPhD): \nMinimum 24 credits with a minimum \nCGPA of 7. Dual degree [M. Tech \n(Research) and PhD] will be awarded \n(see notes below).",
+        "5.7 \nClassification of Awards \n5.7.1 Students graduate with the award of M. Tech/M. Tech(Online)/MDes/MMgt/MSc \ndegrees (as applicable). Distinction is awarded to a student securing a CGPA of 8.5 or \nabove (including the project grade). \n5.8 \nTransfer to PhD Programme"
+      ],
+      "similarities": [
+        0.8528,
+        0.8667,
+        0.86,
+        0.8421,
+        0.8505
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "How many F grades are allowed during the entire program?",
+      "ground_truth": "Only two F grades are permitted during the program.",
+      "retrieved_docs": [
+        "0. \n6. Project grading will be Pass/Fail. \n7. Only two F grades are permitted in the entire programme. If a third F grade is obtained, the registration \nwill be terminated. Additional constraints apply, see F grade handling bullet below.",
+        "Project grading will be Pass/Fail.\nOnly two F grades are permitted in the entire programme. If a third F grade is obtained, the registration will be terminated. Additional constraints apply, see F grade handling bullet below.",
+        "single \u2018F\u2019 grade, which is permitted.\n1.2.7 The student must secure a CGPA of 7.0 or more. This CGPA will be computed using a basket \nrule. According to this rule, from all the courses a student has completed, the courses",
+        "result in the termination of the student from the programme. \n4.2.10 \nIf a student obtains more than two \u2018F\u2019 grades during the entire programme, it will result \nin termination from the programme. \nPage 25 of 115",
+        "b) Only one chance is provided to the student to clear the \u2018F\u2019 grade. If upon repeating \nthe course (or in the substitute course) the student gets an \u2018F\u2019 grade again, the \nstudent will not be allowed to continue in the programme."
+      ],
+      "similarities": [
+        0.8985,
+        0.9076,
+        0.8538,
+        0.8725,
+        0.8667
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "Can I drop a course mid-semester?",
+      "ground_truth": "Yes, but dropping a course requires approval from the course instructor and faculty mentor and must adhere to the timeline specified in the handbook.",
+      "retrieved_docs": [
+        "ii \ncourse dropping with mention in the transcript. \n \n7.3.2 Dropping the courses requires the approval of the advisor/ research supervisor (as \napplicable) and the course instructor. Dropping of a course is permitted only if the total \nnumber of credits does not fall below the minimum stipulated.",
+        "7.3.3 It is advised that the student informs the course instructor if the course is being dropped. \n7.3.4 If a course is dropped during the \u2018course drop without mention\u2019 period (as mentioned in \nthe Academic Calendar), the dropped course will not be listed in the final transcript. If a",
+        "Se no: 7\nAcademic Activities: Course dropping (With mention)\nTime Period: 04.06.2025 to 13.06.2025",
+        "7.3.6 Dropping of courses (for Int. PhD): A student may drop a course in consultation with the \ncoordinator in the first year and with both the supervisor and the coordinator in the \nsubsequent years. All core courses, or their equivalents in the case of elective courses,",
+        "Se no: 5\nAcademic Activities: Course dropping (Without mention)\nTime Period: 11.05.2025 to 30.05.2025"
+      ],
+      "similarities": [
+        0.8722,
+        0.8472,
+        0.8256,
+        0.8537,
+        0.8219
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "Is attendance mandatory for terminal examinations?",
+      "ground_truth": "Yes, attendance for terminal examinations is compulsory. Absence may result in an F grade.",
+      "retrieved_docs": [
+        "Attendance in the terminal examination is compulsory. If a student is absent, they shall \nbe awarded zero marks and an \u2018F\u2019 grade. If a student is unable to appear for the final \nexam for medical reasons, they will be awarded an \u201cX\u201d Grade (Refer to 6.3.4 section). \nPage 33 of 115",
+        "Attendance in the terminal examination is compulsory. Students who are absent will be given an F grade. Absence on medical grounds, after due certification by the sponsoring organisation\u2019s appointed medical officer (a registered medical practitioner), may be condoned and the student will take a",
+        "curriculum committee (which approves the course). This will be indicated to the students at the start of \nthe course. \n21. Attendance in the terminal examination is compulsory. Students who are absent will be given an F grade.",
+        "should be notified to the Academic Section immediately. \n10.1.2 A minimum attendance of 75% on each course is mandatory. A shortage of \nattendance may be condoned by the Deans in exceptional circumstances.",
+        "transcript. \n5.3 \nFinal Examination \n \n5.3.1    Terminal examinations are usually held during the last fortnight of each term and \nduring the last week of the summer term. The timetable is notified in advance."
+      ],
+      "similarities": [
+        0.9229,
+        0.9179,
+        0.8904,
+        0.8419,
+        0.8294
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "What is the structure of the M.Tech (Online) program in terms of credit requirements?",
+      "ground_truth": "The program includes 12 credits of core courses, 20 credits of electives, and 32 credits for the project.",
+      "retrieved_docs": [
+        "The M.Tech.(Online) degree you will earn is equivalent to our full-time Master of Technology (M.Tech.) \ndegree in all respects: number of credits, project work, rigor and the quality of the courses. The term",
+        "20 credits\nProject:\n28 Credits\nMore Details\nM.Tech. (Online) Programme Stats\nTestimonials\nPlease\nclick here\nfor more Testimonial Videos\nFee Structure\nTotal estimated fees for a 3 year completion time. Fees are payable each term, based on credits enrolled.\nRs. 9.6 lac\nfor Artificial Intelligence",
+        "M.Tech (Online) gives the learners:\nOpportunity to complete the Masters\u2019 degree in part-time, while continuing your fulltime job.\nFlexibility to attend the classes online in the evenings and weekends to balance work and personal life.",
+        "Over 350 students from 25 companies are enrolled in the M.Tech.(Online) programme over three years. \nOver 80% of students from 2021 batch and 50% of students from 2022 batch have graduated in under 2.5 \nyears, with the rest completing this year. The programme has a 90% retention rate of students.",
+        "company through an MOU\nthat they have with IISc. See details below.\nM.Tech. (Online) Programme Curriculum\nThe program is typically completed in a 2-3 year period, with the flexibility of taking company-approved breaks in study."
+      ],
+      "similarities": [
+        0.7902,
+        0.829,
+        0.7803,
+        0.7941,
+        0.7909
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "When can a student begin working on their project?",
+      "ground_truth": "Students may begin the project only after completing all core course credits.",
+      "retrieved_docs": [
+        "Students can start this three-term project for 28 credits after successfully completing all the core courses. Students will complete 4 project credits in the 1st term to identify the topic, 12 credits in the 2nd term followed by a midterm evaluation, and the remaining 12 project credits the 3rd",
+        "Students can start this three-term project for 32 credits after successfully completing all the core courses. Students will complete 20 project credits over two terms followed by a midterm evaluation, and the remaining 12 project credits in an exclusive semester for the final evaluation.",
+        "Students can start this three-term project for 32 credits after successfully completing all the core courses. Students will complete 20 project credits over two terms followed by a midterm evaluation, and the remaining 12 project credits in an exclusive semester for the final evaluation.",
+        "Students can start this three-term project for 27 credits after successfully completing all the core courses. Students will complete 3 project credits in the 1st term to identify the topic, 12 credits in the 2nd term followed by a midterm evaluation, and the remaining 12 project credits the 3rd",
+        "student is required to register for fewer courses but must satisfy the prescribed \nminimum. \n \n5.5 \nProject \n5.5.1 Students may, in consent with their supervisors begin their project work during the \nsummer term of the first year/August term of the second year. However, the students"
+      ],
+      "similarities": [
+        0.9065,
+        0.9123,
+        0.9123,
+        0.9051,
+        0.8517
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "Can M.Tech (Online) students transfer to a PhD program?",
+      "ground_truth": "No, transfers or upgrades to a PhD program are not permitted during the M.Tech (Online) program.",
+      "retrieved_docs": [
+        "M.Tech (Online) gives the learners:\nOpportunity to complete the Masters\u2019 degree in part-time, while continuing your fulltime job.\nFlexibility to attend the classes online in the evenings and weekends to balance work and personal life.",
+        "Over 350 students from 25 companies are enrolled in the M.Tech.(Online) programme over three years. \nOver 80% of students from 2021 batch and 50% of students from 2022 batch have graduated in under 2.5 \nyears, with the rest completing this year. The programme has a 90% retention rate of students.",
+        "5.8 \nTransfer to PhD Programme \n5.8.1 Motivated M. Tech/ MDes/ M. Tech (ERP)/ M. Tech (Sponsored) students are given the \noption to transfer to PhD upon the completion of two terms. \n5.8.2 The minimum CGPA for eligibility to transfer to a PhD programme is 8.0, considering all",
+        "5.11 \nM. Tech (Online) \n \nAll rules and regulations applicable to the Regular M. Tech programme are in-principle \napplicable to the M. Tech (Online) Programme, with the following differences: \n5.11.1 The Master\u2019s programme is available only to the candidates sponsored by the",
+        "company through an MOU\nthat they have with IISc. See details below.\nM.Tech. (Online) Programme Curriculum\nThe program is typically completed in a 2-3 year period, with the flexibility of taking company-approved breaks in study."
+      ],
+      "similarities": [
+        0.8127,
+        0.8065,
+        0.82,
+        0.8229,
+        0.8137
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "Who retains intellectual property rights for project work?",
+      "ground_truth": "IPR typically belongs to the sponsoring company unless guidance from IISc faculty is involved, in which case an IPR agreement must be signed.",
+      "retrieved_docs": [
+        "In general, when the guidance is only from the sponsoring company, and IISc\u2019s role is restricted to approval of goals and evaluation, IPR rests with the sponsoring company. If guidance from the IISc faculty mentor is sought by the company, a specific IPR agreement for the retainer consultancy will",
+        "Indian Institute of Science (the \"Institute\"), through the Intellectual Property (IP) Policy \nand Guidelines has put in place a system that brings order to the process of protection of \nIP including inventions, and the utilization of IP through processes of technology transfer",
+        "IPR agreement for the retainer consultancy will be negotiated and put in place. In this case, the PCC needs to be informed and the agreement must be signed before guidance by the IISc faculty mentor begins.",
+        "of goals and evaluation, IPR rests with the sponsoring company. If guidance from the IISc faculty mentor is \nsought by the company, a specific IPR agreement for the retainer consultancy will be negotiated and put in",
+        "five years' experience post Masters. Both the faculty mentor for the project and the organisational guide \nmust be identified prior to start of the project. \n23. In general, when the guidance is only from the sponsoring company, and IISc's role is restricted to approval"
+      ],
+      "similarities": [
+        0.9253,
+        0.8586,
+        0.9019,
+        0.892,
+        0.8626
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "What are the conditions for project evaluation?",
+      "ground_truth": "Project evaluation is conducted by a faculty mentor based on milestones, deliverables, and periodic reviews. Company guides may also be involved.",
+      "retrieved_docs": [
+        "Project evaluation: An assigned faculty mentor, who may be a part of an evaluation committee as specified by the PCC, will be responsible for approving the project goals, for regular evaluation (as per schedule indicated by the PCC), for bringing in the needed academic rigour, and for the final",
+        "and the remaining 12 project credits the 3rd term for the final evaluation.",
+        "and the remaining 12 project credits the 3rd term for the final evaluation.",
+        "Student will propose the topic in consultation with their Guide from within the organization, and an IISc faculty mentor will approve project goals. The faculty mentor will offer high-level feedback on the project and its progress, and coordinate the evaluations, while the in-house company Guide",
+        "Student will propose the topic in consultation with their Guide from within the organization, and an IISc faculty mentor will approve project goals. The faculty mentor will offer high-level feedback on the project and its progress, and coordinate the evaluations, while the in-house company Guide"
+      ],
+      "similarities": [
+        0.902,
+        0.8086,
+        0.8086,
+        0.8819,
+        0.8819
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "What happens if a student does not meet the academic performance criteria in the first term?",
+      "ground_truth": "Students with a TGPA below 4.0 in the first term are subject to academic probation or discontinuation as outlined in the handbook.",
+      "retrieved_docs": [
+        "both the individual and the institute, and this can lead to various penalties. In the case \nof a student, the first violation of academic breach will lead to a warning and/or an \u2018F\u2019 \ngrade in the course. A repeat offence, if deemed sufficiently serious, could lead to \nexpulsion.",
+        "In the first term, if the TGPA falls between 4.0 and less than 5.0, the student will be advised to register for fewer courses in the following semester (if more than one course is credited).",
+        "Students should get a minimum TGPA (term GPA) of 4.0/10.0 in the first term. Subsequent terms CGPA (cumulative GPA) should be at least 5.0/10.0. Students who do not satisfy these minimum requirements are liable to be discontinued from the course, and the discontinuation can be revoked only by the",
+        "result in the termination of the student from the programme. \n4.2.10 \nIf a student obtains more than two \u2018F\u2019 grades during the entire programme, it will result \nin termination from the programme. \nPage 25 of 115",
+        "8. Students should get a minimum TGPA (term GPA) of 4.0/10.0 in the first term. Subsequent terms CGPA \n(cumulative GPA) should be at least 5.0/10.0. Students who do not satisfy these minimum requirements are"
+      ],
+      "similarities": [
+        0.8301,
+        0.9115,
+        0.9136,
+        0.8501,
+        0.8953
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "What is the role of the company guide and faculty mentor in project evaluation?",
+      "ground_truth": "The company guide oversees internal progress while the faculty mentor ensures academic rigor and conducts evaluations.",
+      "retrieved_docs": [
+        "the evaluations, while the in-house company Guide will offer active feedback and close support. The evaluation committee, which includes the faculty mentor and company guide, is appointed by the PCC.",
+        "the evaluations, while the in-house company Guide will offer active feedback and close support. The evaluation committee, which includes the faculty mentor and company guide, is appointed by the PCC.",
+        "the evaluations, while the in-house company Guide will offer active feedback and close support. The evaluation committee, which includes the faculty mentor and company guide, is appointed by the PCC.",
+        "the evaluations, while the in-house company Guide will offer active feedback and close support. The evaluation committee, which includes the faculty mentor and company guide, is appointed by the PCC.",
+        "the evaluations, while the in-house company Guide will offer active feedback and close support. The evaluation committee, which includes the faculty mentor and company guide, is appointed by the PCC."
+      ],
+      "similarities": [
+        0.9064,
+        0.9064,
+        0.9063,
+        0.9064,
+        0.9064
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "Who is the instructor for the course 'Reinforcement Learning' and what are the prerequisites?",
+      "ground_truth": "Prof. N. Viswanadham teaches Reinforcement Learning with prerequisites in probability and linear algebra.",
+      "retrieved_docs": [
+        "E1 277o Reinforcement Learning (3:1) \nCourse Instructor \nProf. Shalabh Bhatnagar, CSA \n \nCourse Description \nReinforcement learning refers to a class of techniques that combine aspects of optimal control, simulation/data driven \noptimization, and approximation methods for problems of dynamic decision making under uncertainty when the model \nof the underlying system and its processes is unknown. A large portion of the algorithms and techniques used here are \nmodel-free in nature and as a result need no knowledge of the system dynamics and protocols used. Reinforcement \nLearning thus finds applications in several diverse areas such as Adaptive Control, Signal Processing, Manufacturing, \nCommunication and Wireless Networks, Autonomous Systems and Data Mining. \nThe objective of this course will be to provide both a rigorous foundation in Reinforcement Learning through the various \ntools, techniques and algorithms used as well as to cover the state-of-the-art algorithms in Deep Reinforcement Learning \ninvolving simulation-based neural network methods. \nSyllabus \nIntroduction to Reinforcement Learning, Multi-armed bandits, Markov decision processes, Dynamic Programming - \nValue and Policy Iteration Methods, Model-Free Learning Approaches, Monte-Carlo Methods, Temporal Difference \nLearning, Q-learning, SARSA, Double Q-learning, Value Function Approximation Methods - TD Learning with Linear \nFunction Approximation, Neural Network Architectures, Deep Q-Network Algorithm, Policy Gradient Methods, Actor-\nCritic Algorithms \nTextbooks / References \n1. Reinforcement Learning by R. Sutton and A. Barto, MIT Press, 2nd Ed., 2018 \n2. Reinforcement Learning and Optimal Control by D. Bertsekas, Athena Scientific, 2019 \n3. Selected Recent Papers \nPrerequisites: None \nGrading \n\u2022 \nHomework: 20% \n\u2022 \nMid-Term Exam: 25% \n\u2022 \nCourse Project: 25% \n\u2022 \nFinal-Term Exam: 30%",
+        "E1 316o Deep Learning for Robotics (2:1) \nCourse Instructors \nDr. Shishir N. Y. Kolathaya, Dr. Pushpak Jagtap, Dr. Ravi Prakash, RBCCPS \n \nCourse Description \nThis graduate course will explore the new area of interaction between learning and control specifically applied to robotic \nsystems, both from a foundational level together with a view toward application. The course will first build the necessary \nframework in which to understand basics of robotic systems, including robot kinematics and dynamics, sensing and \nestimation, control, machine learning, reinforcement learning and imitation learning. With these fundamentals the \ncourse will focus on data driven approaches for learning and control applied to robotic systems. \nSyllabus \nRobot dynamics and kinematics, nonlinear control and stability, Markov decision processes, reinforcement learning, \nimitation learning, model free methods, exploration vs. exploitation \nNote: Active student participation will be expected in course projects, presentations, and delivering lectures in some of \nthe selected topics. \nTextbooks / References \n1. A Mathematical Introduction to Robotic Manipulation by Richard M. Murray, Zexiang Li, S. Shankar Sastry, \nCRC Press, 1994 \n2. Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto, MIT Press, 2017 \n3. Deep Reinforcement Learning by Sergey Levine: http://rail.eecs.berkeley.edu/deeprlcourse/ \n4. Robot Modeling and Control by Mark W. Spong, Seth Hutchinson, M. Vidyasagar, Wiley, 2005 \nPrerequisites: Students must be well versed with basic mathematical concepts like linear algebra, classical analysis, \nand probability theory. \nGrading \n\u2022 \nHomeworks/Quiz: 60% \n\u2022 \nProject Reports: 10% \n\u2022 \nProject Presentations: 30%",
+        "AI Core Courses \n \nE0 270o Machine Learning (3:1) \nCourse Instructor \nProf. Ambedkar Dukkipati, CSA \n \nCourse Description  \n \nThe aim of the course is to provide a unified view of Artificial Intelligence (AI) and Machine Learning (ML) methods. \nThis course stresses on foundations and covers important topics in three elements of Machine Learning: supervised \nlearning, unsupervised learning, and reinforcement learning. Further, this course provides basics of deep learning and \nemphasizes how deep neural networks play key role in various problems as the powerful function approximators. \nAssignments will involve programming and require knowledge of python. \nWebpage will be made available here. \n \nSyllabus \n\u2022 \nSupervised Learning: Classification with Bayes rule, learning as optimization, linear regression, logistic \nregression, probabilistic view: ML and MAP estimates, gradient descent, hyperplane-based classifiers, \nperceptron, kernel methods, feedforward neural networks, backpropagation algorithm, CNN (Convolutional \nNeural Network), RNN and LSTMs \n\u2022 \nUnsupervised Learning: Principal component analysis, clustering methods, undirected graphical models, \nMCMC (Markov Chain Monte Carlo) and Gibbs sampling, latent variable and mixture models, EM \n(Expectation-Maximisation) algorithm, Deep generative models \n\u2022 \nReinforcement Learning: Introduction to sequential decision making and online learning, Markov decision \nprocesses and dynamic programming \nTextbooks / References \n1. Pattern Recognition and Machine Learning by C. M. Bishop, 2006 \n2. The Elements of Statistical Learning: Data Mining, Inference and Prediction by Hastite T, Tibshirani R and \nFriedman J, 2009 \n3. Neural Networks and Learning Systems by Haykin. S, 2009 \n4. Deep Learning by Goodfellow, Bengio, Courville, 2017 \nPrerequisites: There are no formal prerequisites. \nGrading \n\u2022 \nHomework: 40% \n\u2022 \nMid-Term Exam: 30% \n\u2022 \nEnd-Term Exam: 30%",
+        "DA 218o Probabilistic Machine Learning: Theory and Applications (3:1) \nCourse Instructor  \nProf. Punit Rathore, RBCCPS \n  \nCourse Objective  \nThis course will involve mathematics, practical hands-on workshops in python, and programming tasks that require you \nto exercise critical thinking. It aims to build a strong foundation in the area of probabilistic/Bayesian techniques for \nmachine learning. I hope that you will find this course and programming tasks intellectually stimulating and relevant to \nyour current program and your careers (research/industry).  \nSyllabus  \nProbability Distributions, Concepts on Prior, Likelihoods, and Posteriors Distributions, Maximum Likelihood \nEstimation, Conjugate Priors, Parameter Estimation, Probabilistic Regression and Classification Models, Regularization \nusing Priors, Ensemble Learning, Model Selection Probabilistic Unsupervised Learning Models, Latent Variable \nModels (LVMs) e.g., Gaussian Mixture Models, Expectation-Maximization (EM), Probabilistic Graphical Models \n(PGMs), Probabilistic and Statistical Inferencing, Bayesian Estimation, Variable Elimination, Graph Structure Learning, \nMarkov Chain Monte Carlo (MCMC) and Sampling Algorithms, Variational Inference, PGM Examples and \nApplications, Bayesian Neural Network, Generative Models with Brief Overview on Deep Generative Models, Semi-\nSupervised Learning, Active Learning, Anomaly Detection Models  \nPrerequisites  \nMandatory: Basic knowledge in Probability (Mandatory), Proficiency in python  \nOptional: Some basic knowledge in machine learning through coursework or projects \n  \nLearning Outcomes  \nOn successful completion of this course, students should be able to \n  \n(i) Gain an understanding of representative selection of ML techniques (not just limited to probabilistic models)  \n(ii) Describe and use a range of basic and advanced probabilistic models for data mining and machine learning tasks  \n(iii) Code, apply, and solve the real-world problems using python  \n(iv) Design, implement, evaluate, and interpret probabilistic models  \n(v) Identify limitation of the statistical and probabilistic methods covers in the course  \n(vi) Become a discerning ML consumer \n \nTextbooks / References  \n1. Machine learning: A Probabilistic Perspective by Kevin Murphy, MIT Press, 2012  \n2. Probabilistic Graphical Models, Principles and Techniques by Daphne Koller, Cambridge University Press, 2009  \n3. Pattern Recognition and Machine Learning by Christopher Bishop, New York, Springer, 2006  \n4. Bayesian Reasoning and Machine Learning by David Barber, Cambridge Univ. Press, 2013  \n \nGrading  \n\u2022 \nTwo Group Projects/Kaggle: 40%  \n\u2022 \nQuizzes: 30%  \n\u2022 \nEnd-Term Exam: 30%",
+        "AI Elective Courses \n \nCP 214o Foundations of Robotics (3:1) \nCourse Instructor \nProf. Shishir YNK, RBCCPS \n \nCourse Description \n \nThis graduate course will serve as an introductory robotics course for students with little/no background in mechanical \nsystems. It will first build the necessary mathematical framework in which to understand topics such as centre of gravity \nand moment of inertia, friction, statics of rigid bodies, principle of virtual work, kinematics of particles and rigid bodies, \nimpacts, Newtonian and Lagrangian mechanics, rigid body transformations, forward and inverse kinematics, forward \nand inverse dynamics, state space representations. Towards the end of the course, advanced topics such as rigid body \ncollisions, and hybrid dynamical systems will also be covered. \n \nSyllabus \n \nKinematics of particles and rigid bodies, statics and dynamics of rigid bodies, moment of inertia, principal of virtual \nwork, conservation of energy and momentum, collisions, configuration space, task space, rotation groups, rigid \ntransformations, forward and inverse kinematics, forward and inverse dynamics, holonomic and nonholonomic \nconstraints, hybrid systems, hybrid modeling \n \nWeek 1: Part I: Introduction, Overview of course, overview of mechanical systems \nWeek 2: Free-body diagrams, constraints, friction, centre of gravity and moment of inertia \nWeek 3: Virtual displacement, principle of virtual work, potential energy, and equilibrium \nWeek 4: Part II: Kinematics and Dynamics of Rigid Bodies, Types of motion, force, acceleration \nWeek 5: Work and energy, impulse and momentum, impact \nWeek 6,7: Equations of motion Part III: Kinematics and Dynamics of Robots \nWeek 8,9: Configuration space, task space, rigid body transformations \nWeek 10,11: Manipulator kinematics, forward and inverse kinematics \nWeek 12: Forward and inverse dynamics \nWeek 13: Constrained motion, holonomic and nonholonomic systems \n \nTextbooks / References \n1. Introduction to Statics and Dynamics by Ruina, Andy and Pratap, Rudra, Oxford University Press, 2011 \n2. A Mathematical Introduction to Robot Manipulation by Murray, Li and Sastry, CRC Press, 1994 \n3. Robotics: Fundamental Concepts and Analysis by A. Ghosal, Oxford, 2006 \nPrerequisites: None. Basic concepts in linear algebra and programming will help. \nGrading \n\u2022 \nHomework: 50% \n\u2022 \nMid-Term Exam: 20% \n\u2022 \nEnd-Term Exam: 30%"
+      ],
+      "similarities": [
+        0.859,
+        0.8462,
+        0.8268,
+        0.8313,
+        0.8184
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "List the elective courses shared between AI and DSBA programs.",
+      "ground_truth": "Elective courses common to AI and DSBA include Data Mining, Reinforcement Learning, and Causal Inference.",
+      "retrieved_docs": [
+        "DSBA Core Courses \n \nDA 204o Data Science in Practice (3:1) \n \nCourse Instructor  \nProf. Pandarasamy Arjunan, RBCCPS \n \nCourse Description \nThis is a core course for the DSBA stream and an elective for non-DSBA streams. This course provides an introduction \nto using Data Science, including Machine Learning and Artificial Intelligence, in practice. At the end of the course, \nstudents will be confident in identifying and solving end-to-end data science problems in practical applications.  \n \nSyllabus \n \nData Science Fundamentals: Identifying and framing a data science problem in different fields; Data - Types, Pre-\nprocessing; Different types of Analytics; Introduction to Machine Learning, Artificial Intelligence; Is ML/AI the right \ntool for your problem?; Stakeholder Discussion Guidelines; End-to-end Problem Solving through a 6-Step Data Science \nProcess. \n \nExploratory Data Analysis: Math Foundations of Probability and Statistics, Hypothesis Testing, How much data is \nsufficient data?; Data Distributions, Imputation, Outlier handling  \n \nData Science for Tabular Data: CART Algorithm, Random Forest Models, Gradient Boosted Models (XGBoost, \nCatBoost, LightGBM), Feature Importance and Selection, Development-Testing Paradigm, Cross Validation \n \nDeep Learning for Computer Vision and Natural Language Processing: From Linear Regression to Neural \nNetworks from fundamentals, Matrix and Tensor algebra for Neural Networks, Basics of Stochastic Gradient Descent \nand Backpropagation, Hyperparameter Tuning, Different types of Layers, NN as data-processing pipelines, Practical \ncomputer vision with Transfer Learning, Natural Language Processing with Bag of Words models and sequence \ntransformers \n \nProgramming for Data Science, ML and AI: Python (NumPy, Pandas), Scikit Learn, TensorFlow, Keras \n \nTextbooks / References \n \n1. Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aur\u00e9lien G\u00e9ron, 3rd Edition, \nO'Reilly Media, Inc., 2022 \n2. A Hands-On Introduction to Data Science by Shah, Chirag, Cambridge University Press, 2020 \n3. Learn Python 3 the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers \nand Code by Shaw, Zed A, Addison-Wesley Professional, 2017 \n4. Mathematics for Machine Learning by Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong, Cambridge \nUniversity Press, 2020 (https://mml-book.github.io) \nPrerequisites: Basic knowledge of mathematics \n \nGrading \n\u2022 \nProgramming Assignments: 20% \n\u2022 \nCourse Project: 20% \n\u2022 \nBiweekly Quiz: 30% \n\u2022 \nEnd-Term Exam: 30%",
+        "PCC: DSBA\nAI Stream: Elective\nDSBA Stream: Elective\nECE Stream: Elective\nTeams Code: 6e1y4iz",
+        "Program Structure [2023 Batch]\nCore courses (12 credits):\nThese are typically taken in the first and second semesters.\nData Science in Practice (3:1)\nApplied AI: Building Practical and Scalable ML Systems (3:1)\nData Engineering at Scale (3:1)\nSample Elective courses (at least 20 credits):",
+        "Sample Elective courses (at least 20 credits):\nFinancial Analytics\nProbabilistic Machine Learning: Theory and Applications\nData Mining\nArtificial Intelligence for Medical Image Analysis\nTensor computations for Data science\nApplied Artificial Intelligence in Healthcare",
+        "Data Science and Business Analytics (DSBA) \nThe Master of Technology (Online) programme in Data Science and Business Analytics is offered by the Division of \nInterdisciplinary Sciences. It is designed for early-career professionals with 2-8 years of experience to upskill them to \nbecome technology and business leaders in information-driven enterprises. The designed coursework establishes the \nfoundations of data science, trains on data engineering and machine learning techniques, and imparts practical business \nanalysis skills. These learnings are coupled with a unique capstone project that applies the learnings to a hands-on \nproject relevant to the industry. Faculty members from the Departments of CDS, Management Studies, CiSTUP, and \nRBCCPS lead the courses through online lectures and tutorial. \n \nProgramme Structure [from the 2024 batch onwards] \n\u2022 \nCore Courses (12 Credits): These are typically taken in the first and second semesters. \no \nDA 204o: Data Science in Practice (3:1) \no \nDA 218o: Probabilistic Machine Learning: Theory and Applications (3:1) \no \nDA 231o: Data Engineering at Scale (3:1) \n\u2022 \nElective Courses (at least 20 Credits) \no \nDA 219o: Quantum Computing Methods: Theory and Applications (3:1) \no \nDA 225o: Deep Learning (3:1) \no \nDA 226o: Financial Analytics (3:1) \no \nDA 227o: Data Mining (3:1) \no \nDA 245o: Linear Optimization and Network Science (3:1) \no \nDS 216o: Applied Artificial Intelligence in Healthcare (3:1) \no \nDS 261o: Artificial Intelligence for Medical Image Analysis (3:1) \no \nDS 285o: Tensor Computations for Data Science (3:1) \no \nE1 252o: Linear and Non-Linear Optimization (3:1) \nStudents may also take courses from any of the three streams as an elective. These are the minimum number of \nelective credits. More may be taken as well. \n\u2022 \nProject (32 Credits)  \nStudents can start this three-term project for 32 credits after successfully completing all the core courses. Students \nwill complete 20 project credits over two terms followed by a mid-term evaluation, and the remaining 12 project \ncredits in an exclusive semester for the final-term evaluation. Student will propose the topic in consultation with \ntheir Guide from within the organization, and an IISc faculty mentor will approve project goals. The faculty mentor \nwill offer high-level feedback on the project and its progress, and coordinate the evaluations, while the in-house \nCompany guide will offer active feedback and close support. The evaluation committee, which includes the faculty \nmentor and company guide, is appointed by the Programme Curriculum Committee (PCC)."
+      ],
+      "similarities": [
+        0.8777,
+        0.8278,
+        0.8545,
+        0.8696,
+        0.8629
+      ],
+      "hit": true,
+      "mrr": 1.0
+    },
+    {
+      "question": "What is the evaluation scheme for the course 'Deep Learning for Visual Analytics'?",
+      "ground_truth": "Deep Learning for Visual Analytics is evaluated through assignments, midterm, and a final project.",
+      "retrieved_docs": [
+        "DS 265o Deep Learning for Visual Analytics (3:1) \nCourse Instructor \nProf. Venkatesh Babu, CDS \n \nCourse Description \nIn the recent years, Deep Learning has pushed to boundaries of research in many fields. This course focuses on the \napplication of Deep Learning in the field of Visual Analytics. It starts with the basics of Deep Learning, which are built \non top of various concepts from Image Processing and Machine Learning. The second part of the course deals with the \nvarious flavours of Deep Learning in Computer Vision, such as Generative Models, Recurrent Models and Adversarial \nRobustness etc. \nSyllabus \nBasics of machine learning and computer vision, CNN basics, Loss function and back propagation, Object Recognition, \nDetection and Segmentation, Recurrent Neural Networks, LSTM, Generative Adversarial Networks (GANs), Self-\nsupervised learning, Transformers, Explainable AI, Adversarial Robustness of Deep models \nTextbooks / References \n1. Dive into Deep Learning by Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J. Smola (Online) \n2. Recent research papers \nPrerequisites: Basic knowledge of machine learning and image processing \nGrading \n\u2022 \nProjects: 35% \n\u2022 \nAssignments: 25% \n\u2022 \nMid-Term Exam: 20% \n\u2022 \nEnd-Term Exam: 20%",
+        "E9 246o Advanced Topics in Image Processing (3:1) \nCourse Instructor \nProf. Soma Biswas, EE \n \nCourse Description \nThis course will serve as a smooth transition from the traditional image processing/computer vision techniques to the \nstate-of-the-art deep learning-based techniques. At the end of this course, the students will have a broader perspective \nof the field and the different real-world applications like object detection, domain adaptation, etc. will help the students \nunderstand how to use the techniques taught for real-world applications. The assignments and projects will give them \nhands-on experience. There will be 3 Lecture hours per week, and coding assignments and projects are a part of this \ncourse. \nSyllabus \n\u2022 \nImage Features: Local features, Corner detectors, Scale-Invariant Feature Transform (SIFT) and its variants, Shape \ndetectors like Hough Transform, Texture descriptors like LBP, Evaluation \n\u2022 \nDeep Learning of Image Features: Convolution layers, fully connected layers, back propagation, non-linear \nactivation, regularization, batch normalization, drop-out, network architectures \n\u2022 \nImage Segmentation: Graph-based techniques, Active Shape Models, Active Appearance Models, deep learning-\nbased segmentation, evaluation \n\u2022 \nObject Detection: RCNN and its improved variants like Fast-RCNN, Faster RCNN, YOLO, Evaluation \n\u2022 \nSelf-Supervised Learning: Contrastive Learning, RotNet, etc. \n\u2022 \nSelected Topics: Vision Transformers for image classification, Multi-modal foundation model like CLIP, few real-\nworld applications, generative models \nTextbooks / References \n1. Computer Vision: A Modern Approach by David A. Forsyth & Jean Ponce, Prentice Hall \n2. Deep Learning by Ian Goodfellow, Yoshua Bengio and Aaron Courville, MIT Press, 2016 \n3. Recent papers, which will be provided when the topics are taught in class. \nPrerequisites: Digital Image Processing (E9 241o) \nGrading \n\u2022 \nAssignments: 35% \n\u2022 \nMid-Term Exam: 15% \n\u2022 \nEnd-Term Exam: 25% \n\u2022 \nFinal Project: 25%",
+        "DA 225o Deep Learning (3:1) \nCourse Instructor \nProf. Deepak Subramani, CDS \n \nCourse Description \nThis four-credit course will be offered every year in the Summer term as an elective course of the Data Science and \nBusiness Analytics (DSBA) M. Tech (Online) program. This course is aimed to be a graduate-level (200-series) course. \nThe course introduces and trains students in different deep learning techniques to succeed in industry and research. At \nthe end of the course, students would be able to design and use deep learning algorithms. \nSyllabus \nDeep Neural Networks, Backpropagation, Regularization and Optimizers; Deep Convolutional Neural Networks; Deep \nSequence Modeling with Recurrent Architectures; Generative Modeling with Autoencoders and Generative Adversarial \nNetworks (GANs); Deep Reinforcement Learning; Software for Deep Learning; Selected Applications and Case Studies \nfrom Computer Vision, Climate Analytics, Financial Analytics, Autonomous Vehicles \nTopics \nModule 1: Deep Neural Networks: Building and Training Multilayer Perceptrons, Backpropagation, Gradient Problems, \nRegularization, Transfer Learning with pre-trained models \nModule 2: Deep Convolutional Neural Networks: Convolutional Layers, Pooling Layers, CNN Architectures, Object \nDetection, Semantic Segmentation. Applications in Computer Vision and Remote Sensing \nModule 3: Deep Sequence Modeling with Recurrent Architectures: Recurrent Neurons and Layers, Training Recurrent \nNeural Networks, Forecasting a Time Series, Handling Long Sequences. Applications in NLP and Financial Analytics \nModule 4: Generative Modeling: Stacked Autoencoders, Convolutional Autoencoders, Recurrent Autoencoders, \nVariational Autoencoders, Generative Adversarial Networks \nModule 5: Deep Reinforcement Learning: Policy Gradient Networks, Deep Q Networks. Application in Financial \nAnalytics and Autonomous Underwater Vehicles \nTextbooks / References \n1. Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aur\u00e9lien G\u00e9ron, O\u2019Reilly Media \nInc. (2019) \n2. Deep Learning by Ian Goodfellow, Yoshua Bengio & Aaron Courville, MIT Press (2016) \n3. Deep Learning with Python by Francois Chollet, Simon and Schuster (2017) \nPrerequisites: DA 224o, Practical Machine Learning or equivalent \nGrading \n\u2022 \nHomework/Assignments: 40% \n\u2022 \nModule Quizzes: 30% \n\u2022 \nEnd-Term Exam: 30%",
+        "E0 259o Data Analytics (3:1) \nCourse Instructors  \nProf. Rajesh Sundaresan, ECE \nProf. Ramesh Hariharan, CSA \nProf. Vikram Srinivasan, ECE \n \nCourse Description \nData Analytics has assumed increasing importance in recent times. Several industries are now built around the use of \ndata for decision making. Several research areas too, genomics and neuroscience being notable examples, are \nincreasingly focused on large-scale data generation rather than small-scale experimentation to generate initial \nhypotheses. This brings about a need for data analytics. This course will develop modern statistical tools and modelling \ntechniques through hands-on data analysis in a variety of application domains. \nThe course will illustrate the principles of hands-on data analytics through several case studies (6 such studies). On each \ntopic, we will introduce a scientific question and discuss why it should be addressed. Next, we will present the available \ndata, how it was collected, etc. We will then discuss models, provide analyses, and finally touch upon how to address \nthe scientific question using the analyses. \nWe will cover a subset of the following case studies: \n1. Astronomy: From Tycho Brahe's observations to the conclusion that Mars moves in an elliptical orbit \n2. Sports: The Duckworth-Lewis-Stern method for setting targets in shortened limited overs cricket matches \n3. COVID-19: Serological surveys \n4. Visual Neuroscience: Neural correlates predict search difficulty \n5. Genomics: Understanding the causes of cancer \n6. Genomics: The basis for red-green colour blindness \n7. Biology: Effects of smoking \n8. Networks: Community detection \nSyllabus \nData sets from astronomy, genomics, neuroscience, sports, biology, epidemiology, and networks will be analysed to \nanswer specific scientific questions. Statistical tools and modelling techniques will be introduced as needed to analyse \nthe data and eventually address the scientific question. Specific data sets will vary across offerings. Example topics are \nthe following: Tycho Brahe's data on Mars and Kepler's analysis of its orbit (astronomy), the Duckworth-Lewis-Stern \nmethod for setting targets in shortened limited overs cricket matches (cricket), retinoblastoma and causes of cancer \n(genomics), the basis for red-green colour blindness (genomics), serological surveys for COVID-19 (epidemiology), \neffects of smoking (biology), and community detection (networks) \nTextbooks / References \nComputer Age Statistical Inference by B. Efron and T. Hastie, Cambridge University Press, 2016 \nPrerequisites \n1. Random Processes (E2 202o) OR Probability and Statistics (E0 232) OR equivalent \n2. Linear Algebra (E1 219o) OR Matrix Theory \nGrading \n\u2022 \nAssignments: 40% \n\u2022 \nMid-Term Exam: 30% \n\u2022 \nEnd-Term Exam: 30%",
+        "E1 294o Edge and Cloud Systems for Machine Learning Algorithms (3:1) \nCourse Instructor \nProf. Sumit Kumar Mandal, CSA \nCourse Description \nIncreasing complexity of machine learning (ML) algorithms have necessitated the emergence of specialized computer \nsystems. Some ML algorithms are executed at edge, some are executed on the cloud. In this course we will delve into \ndifferent computing kernels of ML algorithms and see how they can be efficiently computed. \nSyllabus \n\u2022 \nIntroduction to Deep Neural Networks (DNN), Convolutional Neural Networks (CNN) \n\u2022 \nDNN processing on GPUs \n\u2022 \nGPU input pipeline for DNN \n\u2022 \nAccelerators for DNNs \n\u2022 \nDNN accelerators with emerging technologies \n\u2022 \nAccelerators for Graph Convolutional Networks (GCN) \n\u2022 \nGCN accelerators with emerging technology \n\u2022 \nAccelerators for Large Language Models (LLMs) \nThe course will involve moderate to heavy programming. The programming part will include building DNNs from \nscratch, understanding various performance analysis tools in Linux, training ML models with and without GPUs, parallel \nprogramming in Python. The programming assignments will be key to understanding ML models from systems \nperspective. \nTextbooks / References \nEfficient Processing of Deep Neural Networks by Vivienne Sze, Yu-Hsin Chen, Tien-Ju Yang, Joel Emer, Morgan & \nClaypool Publishers \nPrerequisites: No prerequisites as such \nGrading \n\u2022 \nClass Participation: 10% \n\u2022 \nScribe: 10% \n\u2022 \nQuiz: 20% \n\u2022 \nHomework: 20% \n\u2022 \nProject: 40%"
+      ],
+      "similarities": [
+        0.871,
+        0.838,
+        0.837,
+        0.8372,
+        0.8208
+      ],
+      "hit": true,
+      "mrr": 1.0
+    }
+  ]
+}

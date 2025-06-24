@@ -8,7 +8,7 @@ from config.settings import FAISS_INDEX_PATH
 from langchain_community.embeddings import OpenAIEmbeddings
 
 EVAL_DATA_PATH = "src/eval_scripts/random_samples.json"
-OUTPUT_RESULTS_PATH = "src/eval_scripts/retrieval_scores.json"
+OUTPUT_RESULTS_PATH = "src/eval_scripts/retrieval_scores_1.json"
 K = 5
 THRESHOLD = 0.75
 
